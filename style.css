@@ -77,3 +77,10 @@ header {
     font-family: var(--fonteprincipal);
     color: var(--cor-fonte-principal)
 }
+.paisesContainer {
+    width: 85%;
+}
+.paisesContainerPaisLogo {
+    width: 150px;
+    height: 230px;
+}
