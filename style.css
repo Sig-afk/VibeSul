@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap');
 :root {
+    /* Fonte */
     --fonteprincipal: 'Trispace', sans-serif;
     --cor-fonte-principal: #2c2c2c;
 }
@@ -64,7 +65,7 @@ header {
 .divCentralTitulo {
     text-align: center;
     font-family: var(--fonteprincipal);
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     color: var(--cor-fonte-principal);
 }
 .divVideo {
@@ -75,7 +76,7 @@ header {
     text-align: justify;
     hyphens: auto;
     font-family: var(--fonteprincipal);
-    color: var(--cor-fonte-principal)
+    color: var(--cor-fonte-principal);
 }
 .paisesTitulo {
     margin-top: 5%;
@@ -94,12 +95,16 @@ header {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 300px;
     height: 200px;
     text-align: center;
     transition: 0.3s;
     overflow: hidden;
     border-radius: 3%;
+}
+.paisesContainerPais:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
 }
 .paisesContainerPaisLogo {
     width: 100%;
@@ -107,7 +112,13 @@ header {
     display: block;
     object-fit: cover;
 }
-.paisesContainerPais:hover {
-    transform: scale(1.1);
-    opacity: 0.6;
+
+/* CSS Países */
+
+.paragrafoPais {
+    width: 50%;
+    text-align: justify;
+    hyphens: auto;
+    font-family: var(--fonteprincipal);
+    color: var(--cor-fonte-principal);
 }
