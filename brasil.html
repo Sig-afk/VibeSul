@@ -8,31 +8,54 @@
 </head>
 <body>
     <header>
-        <h1 id="tituloSite">
-            VibeSul
-        </h1>
+        <h1 id="tituloSite">VibeSul</h1>
         <div class="headerBotoes">
             <a href="index.html">HOME</a>
             <a href="about.html" target="_blank">ABOUT</a>
         </div>
     </header>
     <div id="divCentral">
-        <div class="">
-            <img src="" alt="">
-            <p class="paragrafoPais">
-            Existe um lugar onde o ritmo da música se mistura 
-            organicamente com o som das ondas e onde cada pôr 
-            do sol parece pintar uma nova promessa. Imagine-se 
-            caminhando por trilhas que revelam segredos milenares 
-            da natureza, saboreando pratos que contam histórias de 
-            muitas culturas e sentindo a genuína calidez de um sorriso 
-            que o faz sentir-se em casa, mesmo estando a milhares 
-            de quilômetros dela. O Brasil não é apenas um destino 
-            no mapa; é uma experiência que espera, pacientemente, 
-            para ser vivida por você.
-            </p>
+        <img class="paisHero" src="./assets/brasil-gif.gif" alt="Brasil">
+        <div class="paisConteudo">
+            <h1 class="paisTitulo">Brasil</h1>
+            <p class="paisSubtitulo">Dados gerais</p>
+            <table class="paisTabela">
+                <tr><td>Capital</td><td>Brasília</td></tr>
+                <tr><td>População</td><td>214 milhões</td></tr>
+                <tr><td>Área</td><td>8,5 milhões de km²</td></tr>
+                <tr><td>Idioma oficial</td><td>Português</td></tr>
+                <tr><td>Moeda</td><td>Real (R$)</td></tr>
+                <tr><td>Forma de governo</td><td>República presidencialista</td></tr>
+            </table>
+            <p class="paragrafoPais">O Brasil é o maior país da América do Sul e o quinto maior do mundo, ocupando quase metade do território sul-americano. Sua geografia é extraordinariamente diversa: da vastidão da Floresta Amazônica ao norte, passando pelo cerrado do planalto central, ao pantanal — a maior planície alagável do planeta — e chegando à Mata Atlântica ao longo do litoral. São mais de 7 mil quilômetros de costa banhados pelo Atlântico, com praias que variam entre dunas desérticas no Maranhão e falésias alaranjadas em Alagoas.</p>
+            <img class="paisImgSecundaria" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rio_de_Janeiro-_luca_galuzzi_2015_%288%29.JPG/1280px-Rio_de_Janeiro-_luca_galuzzi_2015_%288%29.JPG" alt="Brasil">
+            <p class="paisSubtitulo">Cultura e sociedade</p>
+            <p class="paragrafoPais">Com mais de 214 milhões de habitantes, o Brasil é uma das nações mais populosas e diversas do mundo. Sua formação étnica e cultural resulta de séculos de encontro entre povos indígenas, colonizadores portugueses, africanos trazidos pela escravidão e imigrantes de dezenas de países. Essa mistura se expressa na culinária, na religiosidade, na música — do samba ao forró, do baião ao funk — e em manifestações populares como o carnaval, as festas juninas e o candomblé.</p>
+            <p class="paragrafoPais">O futebol ocupa um lugar quase mítico na identidade nacional. O Brasil é o único país a ter participado de todas as edições da Copa do Mundo e o maior vencedor do torneio, com cinco títulos. Nomes como Pelé, Ronaldo e Ronaldinho são reconhecidos globalmente como símbolos do estilo brasileiro de jogar — criativo, técnico e espetacular.</p>
+            <p class="paisSubtitulo">Turismo</p>
+            <p class="paragrafoPais">O Brasil recebe milhões de visitantes por ano atraídos por destinos como o Rio de Janeiro — com o Cristo Redentor e as praias de Copacabana e Ipanema —, o Pantanal para o ecoturismo, os Lençóis Maranhenses, a Chapada Diamantina, a Amazônia e o litoral nordestino. A gastronomia regional também é um atrativo: a feijoada, o acarajé, o pão de queijo e o açaí são apenas alguns exemplos de uma culinária vasta e cheia de identidade.</p>
+            <hr class="paisDivisor">
+            <div class="paisForm">
+                <h3>Comentários</h3>
+                <div class="formLinha">
+                    <div class="formGrupo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="formGrupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com">
+                    </div>
+                </div>
+                <div class="formGrupo">
+                    <label for="mensagem">Comentário</label>
+                    <textarea id="mensagem" placeholder="Compartilhe sua experiência ou curiosidade..."></textarea>
+                </div>
+                <div class="formRodape">
+                    <button class="formBotao">Publicar</button>
+                </div>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
