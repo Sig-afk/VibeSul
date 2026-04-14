@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VibeSul | Guiana</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -36,7 +37,7 @@
             <p class="paragrafoPais">As Cataratas Kaieteur, com 226 metros de queda livre, são uma das mais poderosas do mundo — quase cinco vezes mais altas que as Cataratas do Niágara. O Parque Nacional Kaieteur e os tepuis da Grande Savana oferecem ecoturismo único. Georgetown guarda belas construções coloniais de madeira em estilo vitoriano.</p>
             <hr class="paisDivisor">
             <div class="paisForm">
-                <h3>Comentários</h3>
+                <h3>Deixe seu Comentário</h3>
                 <div class="formLinha">
                     <div class="formGrupo">
                         <label for="nome">Nome</label>
@@ -52,8 +53,10 @@
                     <textarea id="mensagem" placeholder="Compartilhe sua experiência ou curiosidade..."></textarea>
                 </div>
                 <div class="formRodape">
-                    <button class="formBotao">Publicar</button>
+                    <button class="formBotao" onclick="publicarComentario()">Publicar</button>
                 </div>
+                <h3>comentários</h3>
+                <div id="listaComentarios"></div>
             </div>
         </div>
     </div>

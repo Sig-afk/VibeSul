@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VibeSul | Venezuela</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -36,7 +37,7 @@
             <p class="paragrafoPais">O Salto Ángel, no Parque Nacional Canaima, é a cachoeira mais alta do mundo com 979 metros de queda livre — quase 20 vezes mais alta que as Cataratas do Niágara. O parque, patrimônio da humanidade, oferece tepuis e lagoas de água preta. A ilha de Margarita e os Llanos, com safáris para observar capivara e jacaré, são outros destaques.</p>
             <hr class="paisDivisor">
             <div class="paisForm">
-                <h3>Comentários</h3>
+                <h3>Deixe seu Comentário</h3>
                 <div class="formLinha">
                     <div class="formGrupo">
                         <label for="nome">Nome</label>
@@ -52,8 +53,10 @@
                     <textarea id="mensagem" placeholder="Compartilhe sua experiência ou curiosidade..."></textarea>
                 </div>
                 <div class="formRodape">
-                    <button class="formBotao">Publicar</button>
+                    <button class="formBotao" onclick="publicarComentario()">Publicar</button>
                 </div>
+                <h3>comentários</h3>
+                <div id="listaComentarios"></div>
             </div>
         </div>
     </div>

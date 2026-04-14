@@ -13,7 +13,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-color: #f0f4f8;
     display: flex;
@@ -359,4 +359,16 @@ a.paisesContainerPaisLogo img {
 
 .formBotao:hover {
     background-color: #2471a3;
+}
+
+#listaComentarios {
+    padding: 24px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fcfcfc; 
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }

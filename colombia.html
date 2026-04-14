@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VibeSul | Colômbia</title>
+    <title>VibeSul | Colombia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -36,7 +37,7 @@
             <p class="paragrafoPais">Cartagena das Índias, com seu centro histórico murado e arquitetura colonial caribenha, é um dos destinos turísticos mais visitados da América do Sul. Bogotá surpreende pelos museus — o Museo del Oro e o Museo Botero são imperdíveis. O Parque Tayrona e a Cidade Perdida atraem viajantes em busca de natureza e aventura.</p>
             <hr class="paisDivisor">
             <div class="paisForm">
-                <h3>Comentários</h3>
+                <h3>Deixe seu Comentário</h3>
                 <div class="formLinha">
                     <div class="formGrupo">
                         <label for="nome">Nome</label>
@@ -52,8 +53,10 @@
                     <textarea id="mensagem" placeholder="Compartilhe sua experiência ou curiosidade..."></textarea>
                 </div>
                 <div class="formRodape">
-                    <button class="formBotao">Publicar</button>
+                    <button class="formBotao" onclick="publicarComentario()">Publicar</button>
                 </div>
+                <h3>comentários</h3>
+                <div id="listaComentarios"></div>
             </div>
         </div>
     </div>

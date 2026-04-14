@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VibeSul | Bolívia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -37,7 +38,7 @@
             <p class="paragrafoPais">O Salar de Uyuni, maior planície de sal do mundo com mais de 10.000 km², é um dos destinos mais fotografados do planeta. O lago Titicaca, o mais alto lago navegável do mundo, abriga ilhas flutuantes habitadas pelos povos Uros. A cidade colonial de Potosí, antiga capital da prata mundial, é patrimônio da humanidade.</p>
             <hr class="paisDivisor">
             <div class="paisForm">
-                <h3>Comentários</h3>
+                <h3>Deixe seu Comentário</h3>
                 <div class="formLinha">
                     <div class="formGrupo">
                         <label for="nome">Nome</label>
@@ -53,8 +54,10 @@
                     <textarea id="mensagem" placeholder="Compartilhe sua experiência ou curiosidade..."></textarea>
                 </div>
                 <div class="formRodape">
-                    <button class="formBotao">Publicar</button>
+                    <button class="formBotao" onclick="publicarComentario()">Publicar</button>
                 </div>
+                <h3>comentários</h3>
+                <div id="listaComentarios"></div>
             </div>
         </div>
     </div>
