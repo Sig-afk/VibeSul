@@ -24,43 +24,79 @@ body {
 /* ── HEADER ── */
 header {
     width: 100%;
-    height: 15vh;
-    background-color: var(--azul);
+    min-height: 15vh;
+    background: linear-gradient(135deg, #1a5276 0%, #2980b9 50%, #3498db 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
 }
 
 #tituloSite {
     color: #FDF5E6;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    letter-spacing: 4px;
-    margin-bottom: 12px;
-    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-family: var(--fonteprincipal);
+    letter-spacing: 6px;
+    margin-bottom: 14px;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .headerBotoes {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 36px;
     font-family: var(--fonteprincipal);
 }
 
 .headerBotoes a {
-    color: #FDF5E6;
-    font-weight: 500;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+    color: rgba(253, 245, 230, 0.85);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 2px;
     text-decoration: none;
-    opacity: 0.85;
-    transition: opacity 0.2s;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.headerBotoes a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #FDF5E6;
+    border-radius: 1px;
+    transition: width 0.3s ease;
 }
 
 .headerBotoes a:hover {
-    opacity: 1;
+    color: #FDF5E6;
+}
+
+.headerBotoes a:hover::after {
+    width: 100%;
 }
 
 /* ── DIV CENTRAL ── */
